@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Public+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+.cardPp{
+  cursor: pointer;
+  position: relative;
+  width: 540px;
+  height: 725px;
+}
+.cardPp div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 1s;
+
+}
+.cardPp .cardContainerFront{
+  transform: perspective(500px)rotateY(180deg);
+}
+.cardPp .cardContainerBack{
+  transform: perspective(500px)rotateY(0deg);
+}
+.cardPp:hover .cardContainerFront{
+  transform: perspective(500px)rotateY(360deg);
+}
+.cardPp:hover .cardContainerBack{
+  transform: perspective(500px)rotateY(180deg);
+}
+.border{
+  border-radius: 25px;
+}
+
+.background .imageUrl {
+  width: 65%;
+  height: 350px;
+  border-radius: 25px;
+  background: red;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  top: 7%;
+  right: 17%;
+}
+
+.background .imageUrl img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.background .dataCharacter {
+  color: #332C20;
+  width: 80%;
+  height: 250px;
+  border-radius: 25px;
+  background: rgba(182, 169, 95, 0.3);
+  bottom: 7%;
+  right: 10%;
+  text-align: center;
+  font-family: "Grenze gotisch";
+}
+
+.firstName {
+  font-size: 70px;
+  text-transform: uppercase;
+}
+.lastName {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 10px;
+}
+.family {
+  line-height: 80px;
+  font-size: 25px;
+}
+
+.otherInfo {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Public-Sans";
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
