@@ -20,13 +20,20 @@ async function createCards() {
   let characters = await getCharacters();
   characters.got.forEach(character => {
     const card = document.createElement('div');
+    card.className = 'character-card';
     card.innerHTML = ` 
-  <img src='${character.imageUrl}'>
-  <h2>${character.firstName}</h2>
-  <h3>${character.lastName}</h3>
-  <h4>${character.family}</h4>
-  <h5>${character.title}</h5>
-  <h5>${character.born}</h5>
+  <div class='background'>
+    <img src='./images/cardContainerMiniatura.png'>
+    <div class='character-info'>
+      <div class='img-container'>
+      <img src='${character.imageUrl}'>
+      </div>
+      <div class='name-container'>
+      <h2>${character.firstName}</h2>
+      <h3>${character.lastName}</h3>
+      </div>
+    </div>
+  </div>
   `
 
     document.querySelector(`#characters`).appendChild(card);
