@@ -8,7 +8,7 @@
         "title": "Mother of Dragons",
         "family": "House Targaryen",
         "imageUrl": "https://thronesapi.com/assets/images/daenerys.jpg",
-        "born": "284 DC"
+        "born": "284 BC"
       },
       {
         "id": 1,
@@ -18,7 +18,7 @@
         "title": "Maester",
         "family": "House Tarly",
         "imageUrl": "https://thronesapi.com/assets/images/sam.jpg",
-        "born": "283 DC"
+        "born": "283 BC"
       },
       {
         "id": 2,
@@ -28,7 +28,7 @@
         "title": "King of the North",
         "family": "House Stark",
         "imageUrl": "https://thronesapi.com/assets/images/jon-snow.jpg",
-        "born": "283 DC"
+        "born": "283 BC"
       },
       {
         "id": 3,
@@ -58,7 +58,7 @@
         "title": "Lord of Winterfell",
         "family": "House Stark",
         "imageUrl": "https://thronesapi.com/assets/images/bran-stark.jpg",
-        "born": "290 DC"
+        "born": "290 BC"
       },
       {
         "id": 6,
@@ -68,7 +68,7 @@
         "title": "Lord of Winterfell",
         "family": "House Stark",
         "imageUrl": "https://thronesapi.com/assets/images/ned-stark.jpg",
-        "born": "263 DC"
+        "born": "263 BC"
       },
       {
         "id": 7,
@@ -78,7 +78,7 @@
         "title": "Lord of the Seven Kingdoms",
         "family": "House Baratheon",
         "imageUrl": "https://thronesapi.com/assets/images/robert-baratheon.jpeg",
-        "born": "262 DC"
+        "born": "262 BC"
       },
       {
         "id": 8,
@@ -88,8 +88,8 @@
         "title": "Lord Commander of the Kingsguard",
         "family": "House Lannister",
         "imageUrl": "https://thronesapi.com/assets/images/jaime-lannister.jpg",
-        "born": "262 DC",
-        "death": "305 DC"
+        "born": "262 BC",
+        "death": "305 BC"
       },
       {
         "id": 9,
@@ -98,9 +98,9 @@
         "fullName": "Cersei Lannister",
         "title": "Lady of Casterly Rock",
         "family": "House Lannister",
-        "imageUrl": "https://thronesapi.com/assets/images/cersei.jpg",
-        "born": "262 DC",
-        "death": "305 DC"
+        "imageUrl": "https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/cersei-lannister-1920.jpg",
+        "born": "262 BC",
+        "death": "305 BC"
       },
       {
         "id": 10,
@@ -110,8 +110,8 @@
         "title": "Lady of Winterfell",
         "family": "House Stark",
         "imageUrl": "https://thronesapi.com/assets/images/catelyn-stark.jpg",
-        "born": "264 DC",
-        "death": "299 DC"
+        "born": "264 BC",
+        "death": "299 BC"
       },
       {
         "id": 11,
@@ -121,8 +121,8 @@
         "title": "Lord of Winterfell",
         "family": "House Stark",
         "imageUrl": "https://thronesapi.com/assets/images/robb-stark.jpg",
-        "born": "283 DC",
-        "death": "299 DC"
+        "born": "283 BC",
+        "death": "299 BC"
       },
       {
         "id": 12,
@@ -131,8 +131,8 @@
         "fullName": "Theon Greyjoy",
         "title": "Captain of Sea Bitch",
         "family": "House Greyjoy",
-        "imageUrl": "https://thronesapi.com/assets/images/theon.jpg",
-        "born": "278 DC"
+        "imageUrl": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/4/41/Theon_greyjoy_photo.jpg",
+        "born": "278 BC"
       },
       {
         "id": 13,
@@ -140,10 +140,10 @@
         "lastName": "Baratheon",
         "fullName": "Joffrey Baratheon",
         "title": "Lord of the Seven Kingdoms, Protector of the Realm",
-        "family": "House Lanister",
+        "family": "House Lannister",
         "imageUrl": "https://thronesapi.com/assets/images/joffrey.jpg",
-        "born": "286 DC",
-        "death": "300 DC"
+        "born": "286 BC",
+        "death": "300 BC"
       },
       {
         "id": 14,
@@ -151,9 +151,9 @@
         "lastName": "Lannister",
         "fullName": "Tyrion Lannister",
         "title": "Hand of the Queen",
-        "family": "House Lanister",
+        "family": "House Lannister",
         "imageUrl": "https://thronesapi.com/assets/images/tyrion-lannister.jpg",
-        "born": "272 DC"
+        "born": "272 BC"
       },
       {
         "id": 15,
@@ -163,8 +163,8 @@
         "title": "The Hound",
         "family": "House Clegane",
         "imageUrl": "https://thronesapi.com/assets/images/the-hound.jpg",
-        "born": "270 DC",
-        "death": "300 DC"
+        "born": "270 BC",
+        "death": "300 BC"
       },
       {
         "id": 16,
@@ -173,7 +173,7 @@
         "fullName": "Petyr Baelish",
         "title": "Littlefinger",
         "family": "House Baelish",
-        "imageUrl": "https://thronesapi.com/assets/images/littlefinger.jpg",
+        "imageUrl": "https://vader.news/__export/1616378898245/sites/gadgets/img/2021/03/21/mexique_game_of_thrones_1.jpg_453771805.jpg",
         "born": "264 AL",
         "death": "305 AL"
       },
@@ -203,7 +203,7 @@
         "lastName": "Unknown",
         "fullName": "Varys",
         "title": "Master of Whisperers",
-        "family": "Unknown",
+        "family": "House Unknown",
         "imageUrl": "https://thronesapi.com/assets/images/varys.jpg",
         "born": null
       },
@@ -215,8 +215,8 @@
         "title": "Khal",
         "family": "House Targaryen",
         "imageUrl": "https://thronesapi.com/assets/images/khal-drogo.jpg",
-        "born": "268 DC",
-        "death": "298 DC"
+        "born": "268 BC",
+        "death": "298 BC"
       },
       {
         "id": 21,
@@ -225,9 +225,9 @@
         "fullName": "Margaery Tyrell",
         "title": "Queen of the Seven Kingdoms",
         "family": "House Tyrell",
-        "imageUrl": "https://thronesapi.com/assets/images/margaery-tyrell.jpg",
-        "born": "283 DC",
-        "death":"303 DC"
+        "imageUrl": "https://www.nacionflix.com/__export/1645825589007/sites/debate/img/2022/02/25/margaery-tyrell-got.jpg_423682103.jpg",
+        "born": "283 BC",
+        "death":"303 BC"
       },
       {
         "id": 22,
@@ -236,9 +236,9 @@
         "fullName": "Ygritte",
         "title": "Spearwife",
         "family": "Free Folk",
-        "imageUrl": "https://thronesapi.com/assets/images/ygritte.jpg",
-        "born": "280 DC",
-        "death": "299 DC"
+        "imageUrl": "https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/ygritte-1920.jpg?w=1200",
+        "born": "280 BC",
+        "death": "299 BC"
       },
       {
         "id": 23,
@@ -246,8 +246,8 @@
         "lastName": "Tarth",
         "fullName": "Brienne of Tarth",
         "title": "Lady Brienne",
-        "family": "Tarth",
-        "imageUrl": "https://thronesapi.com/assets/images/brienne-tarth.jpeg",
+        "family": "House Tarth",
+        "imageUrl": "https://i.ytimg.com/vi/cBnmDQKL8yk/maxresdefault.jpg",
         "born": "280 AL"
       },
       {
@@ -256,9 +256,9 @@
         "lastName": "None",
         "fullName": "Missandei",
         "title": "Queen's Personal Advisor",
-        "family": "Naathi",
-        "imageUrl": "https://thronesapi.com/assets/images/missandei.jpeg",
-        "born": "289 DC"
+        "family": "House Naathi",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/nNegcE96dFGqf79UujHoYS.jpg",
+        "born": "289 BC"
       },
       {
         "id": 25,
@@ -276,10 +276,10 @@
         "lastName": "Targaryan",
         "fullName": "Viserys Targaryn",
         "title": "King Viserys III",
-        "family": "Targaryan",
+        "family": "House Targaryan",
         "imageUrl": "https://thronesapi.com/assets/images/viserys-targaryan.jpg",
-        "born": "276 DC",
-        "death": "298 DC"
+        "born": "276 BC",
+        "death": "298 BC"
       },
       {
         "id": 27,
@@ -287,9 +287,9 @@
         "lastName": "Stark",
         "fullName": "Rickon Stark",
         "title": "Prince",
-        "family": "Stark",
+        "family": "House Stark",
         "imageUrl": "https://thronesapi.com/assets/images/rickon.jpg",
-        "born": "295 DC"
+        "born": "295 BC"
       },
       {
         "id": 28,
@@ -297,9 +297,9 @@
         "lastName": "Bolton",
         "fullName": "Roose Bolton",
         "title": "Lord of Dreadfort",
-        "family": "Bolton",
+        "family": "House Bolton",
         "imageUrl": "https://thronesapi.com/assets/images/roose-bolton.jpg",
-        "born": "255 DC"
+        "born": "255 BC"
       },
       {
         "id": 29,
@@ -307,7 +307,7 @@
         "lastName": "Naharis",
         "fullName": "Daario",
         "title": "Commander of the Second Sons",
-        "family": "Naharis",
+        "family": "House Naharis",
         "imageUrl": "https://thronesapi.com/assets/images/daario.jpg",
         "born": null
       },
@@ -319,8 +319,8 @@
         "title": "Mistress",
         "family": "Lorathi",
         "imageUrl": "https://thronesapi.com/assets/images/shae.jpg",
-        "born": "281 DC",
-        "death": "300 DC"
+        "born": "281 BC",
+        "death": "300 BC"
       },
       {
         "id": 31,
@@ -328,9 +328,9 @@
         "lastName": "Baratheon",
         "fullName": "Tommen Baratheon",
         "title": "Prince",
-        "family": "Baratheon",
+        "family": "House Baratheon",
         "imageUrl": "https://thronesapi.com/assets/images/tommen.jpg",
-        "born": "291 DC"
+        "born": "291 BC"
       },
       {
         "id": 32,
@@ -338,9 +338,9 @@
         "lastName": "Baratheon",
         "fullName": "Gendry Baratheon",
         "title": "Lord of Storm's End",
-        "family": "Baratheon",
+        "family": "House Baratheon",
         "imageUrl": "https://thronesapi.com/assets/images/gendry.jpg",
-        "born": "284 DC"
+        "born": "284 BC"
       },
       {
         "id": 33,
@@ -348,9 +348,9 @@
         "lastName": "Mormont",
         "fullName": "Jorah Mormont",
         "title": "Knight",
-        "family": "Mormont",
+        "family": "House Mormont",
         "imageUrl": "https://thronesapi.com/assets/images/jorah-mormont.jpg",
-        "born": "254 DC"
+        "born": "254 BC"
       },
       {
         "id": 34,
@@ -358,10 +358,10 @@
         "lastName": "Baratheon",
         "fullName": "Robert Baratheon",
         "title": "King",
-        "family": "Baratheon",
+        "family": "House Baratheon",
         "imageUrl": "https://thronesapi.com/assets/images/king-robert.jpg",
-        "born": "262 DC",
-        "death": "298 DC"
+        "born": "262 BC",
+        "death": "298 BC"
       },
       {
         "id": 35,
@@ -369,9 +369,9 @@
         "lastName": "Bolton",
         "fullName": "Ramsey Bolton",
         "title": "The Bastard of Bolton",
-        "family": "Bolton",
+        "family": "House Bolton",
         "imageUrl": "https://thronesapi.com/assets/images/ramsey-bolton.jpg",
-        "born": "277 DC"
+        "born": "277 BC"
       },
       {
         "id": 36,
@@ -379,10 +379,10 @@
         "lastName": "Stark",
         "fullName": "Talisa Stark",
         "title": "Queen Consort",
-        "family": "Stark",
+        "family": "House Stark",
         "imageUrl": "https://thronesapi.com/assets/images/talisa-stark.jpg",
         "born": null,
-        "death": "300 DC"
+        "death": "300 BC"
       },
       {
         "id": 37,
@@ -390,10 +390,10 @@
         "lastName": "Mormont",
         "fullName": "Jeor Mormont",
         "title": "Lord Commander of the Knight's Watch",
-        "family": "Mormont",
+        "family": "House Mormont",
         "imageUrl": "https://thronesapi.com/assets/images/lord-commander-mormont.jpg",
-        "born": "230 DC",
-        "death": "299 DC"
+        "born": "230 BC",
+        "death": "299 BC"
       },
       {
         "id": 38,
@@ -411,10 +411,10 @@
         "lastName": "Martell",
         "fullName": "Oberyn Martell",
         "title": "Red Viper of Dorne",
-        "family": "Viper",
+        "family": "House Viper",
         "imageUrl": "https://thronesapi.com/assets/images/red-viper.jpg",
-        "born": "258 DC",
-        "death": "300 DC"
+        "born": "258 BC",
+        "death": "300 BC"
       },
       {
         "id": 40,
@@ -442,10 +442,10 @@
         "lastName": "Lannister",
         "fullName": "Tywin Lannister",
         "title": "Lord Paramount of Westerlands",
-        "family": "Lannister",
+        "family": "House Lannister",
         "imageUrl": "https://thronesapi.com/assets/images/tywin-lannister.jpg",
-        "born": "234 DC",
-        "death": "301 DC"
+        "born": "234 BC",
+        "death": "301 BC"
       },
       {
         "id": 43,
@@ -453,8 +453,8 @@
         "lastName": "Sand",
         "fullName": "Ellaria Sand",
         "title": "Paramour of Prince Oberyn Martell",
-        "family": "Sand",
-        "imageUrl": "https://thronesapi.com/assets/images/ellaria-sand.jpg",
+        "family": "House Sand",
+        "imageUrl": "https://s1.r29static.com/bin/entry/8f5/x,80/1848442/image.jpg",
         "born": null
       },
       {
@@ -473,9 +473,9 @@
         "lastName": "Greyjoy",
         "fullName": "Yara Greyjoy",
         "title": "Lady of the Iron Islands",
-        "family": "Greyjoy",
+        "family": "House Greyjoy",
         "imageUrl": "https://thronesapi.com/assets/images/yara-greyjoy.jpg",
-        "born": "276 DC"
+        "born": "276 BC"
       },
       {
         "id": 46,
@@ -483,7 +483,7 @@
         "lastName": "Greyjoy",
         "fullName": "Euron Greyjoy",
         "title": "King of the iron Islands",
-        "family": "Greyjoy",
+        "family": "House Greyjoy",
         "imageUrl": "https://thronesapi.com/assets/images/euron-greyjoy.jpg",
         "born": null
       },
@@ -493,20 +493,20 @@
         "lastName": "Hodor",
         "fullName": "Hodor",
         "title": "Servant of House Stark",
-        "family": "Stark",
-        "imageUrl": "https://thronesapi.com/assets/images/hodor.jpg",
+        "family": "House Stark",
+        "imageUrl": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2016/05/23/5fa2cfdbc6c97.jpeg",
         "born": null
       },
       {
         "id": 48,
-        "firstName": "",
+        "firstName": "Pycelle",
         "lastName": "Pycelle",
         "fullName": "Pycelle",
         "title": "Grand Maester of the Seven Kingdoms",
-        "family": "",
+        "family": "Pycelle",
         "imageUrl": "https://thronesapi.com/assets/images/pycelle.jpg",
-        "born": "216 DC",
-        "death": "300 DC"
+        "born": "216 BC",
+        "death": "300 BC"
       },
       {
         "id": 49,
@@ -524,9 +524,9 @@
         "lastName": "Tyrell",
         "fullName": "Olenna Tyrell",
         "title": "Queen of Thorns",
-        "family": "Tyrell",
+        "family": "House Tyrell",
         "imageUrl": "https://thronesapi.com/assets/images/olenna-tyrell.jpg",
-        "born": "228 DC"
+        "born": "228 BC"
       },
       {
         "id": 51,
@@ -546,6 +546,6 @@
         "title": "Lord of Highgarden",
         "family": "Bronn",
         "imageUrl": "https://thronesapi.com/assets/images/bronn.jpg",
-        "born": "268 DC"
+        "born": "268 BC"
       }
     ]}
