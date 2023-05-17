@@ -1,14 +1,5 @@
 import { example } from './data.js';
 
-//import data from './data/got/got.js';
-
-// async function getCharacters() {
-//   await fetch('./data/got/got.json')
-//     .then((response) => response.json())
-//     .then((json) => { return json });
-// }
-
-
 async function getCharacters() {
   const response = await fetch('./data/got/got.json');
   const json = await response.json();
@@ -42,3 +33,5 @@ async function createCards() {
 }
 
 createCards();
+
+/* TODO RENDER CATEGORIES IN FILTER-BAR BUTTONS */

@@ -67,13 +67,17 @@ header {
 }
 
 .nav-bar ul input {
-  height: 50%;
+  height: 100%;
   width: 80%;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
 }
 
 select {
   border: none;
-  background-color: rgb(202, 182, 143);
+  background-color: rgb(177, 146, 83);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   font-family: 'Grenze Gotisch';
   font-size: 1.5rem;
   border-radius: 8px;
@@ -92,7 +96,7 @@ select {
 
 select:hover {
   cursor: pointer;
-  background-color: rgb(166, 139, 92);
+  background-color: rgb(198, 168, 116);
 }
 
 
@@ -101,15 +105,34 @@ select:hover {
   padding: 8px;
   border-radius: 8px;
   background-color: rgb(119, 88, 55);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   font-family: 'Grenze Gotisch';
   font-size: 1.5rem;
 }
 
 .view-all:hover {
   cursor: pointer;
-  background-color: rgb(166, 139, 92);
+  background-color: rgb(198, 168, 116);
 }
 
+.sort-by {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  border: none;
+  background-color: white;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.sort-by img {
+  height: 2.5rem;
+  margin-left: 10px;
+}
+
+.sort-by:hover {
+  cursor: pointer;
+}
 /* ESTILO CARDS HOME */
 
 .characters {
