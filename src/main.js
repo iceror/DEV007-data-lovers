@@ -35,3 +35,12 @@ async function createCards() {
 createCards();
 
 /* TODO RENDER CATEGORIES IN FILTER-BAR BUTTONS */
+
+async function getCategories() {
+  const json = await getCharacters();
+  console.log(json);
+  // GET NAMES, LASTNAMES, ETC. FILTER REPEATED ONES
+  //RENDER CATEGORIES/OPTIONS  
+}
+
+getCategories();
