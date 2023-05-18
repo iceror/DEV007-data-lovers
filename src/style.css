@@ -3,17 +3,33 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Grenze Gotisch';
 }
 
-h1 {
+html {
+  scroll-behavior: smooth;
+}
+
+header {
   width: 100%;
   height: 5rem;
-  background-color: rgb(202, 182, 143);
+  background-image: url('./images/backGroundDesktop.jpg');
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Grenze Gotisch';
-  font-size: 3rem;
+}
+
+.logo {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.logo img {
+  height: 5rem;
 }
 
 .main {
@@ -22,7 +38,7 @@ h1 {
 
 .houses {
   height: calc(100vh - 15rem);
-  background-color: rgb(78, 57, 68);
+  background-image: url('./images/fondoFamilias.jpg');
 }
 
 .filter-bar {
@@ -31,14 +47,14 @@ h1 {
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  background-color: rgb(202, 182, 143);
-
+  background-image: url('./images/backGroundDesktop.jpg');
 }
 
 .nav-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 5rem;
 }
 
 .nav-bar ul {
@@ -51,13 +67,17 @@ h1 {
 }
 
 .nav-bar ul input {
-  height: 50%;
+  height: 100%;
   width: 80%;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
 }
 
 select {
   border: none;
-  background-color: rgb(202, 182, 143);
+  background-color: rgb(177, 146, 83);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   font-family: 'Grenze Gotisch';
   font-size: 1.5rem;
   border-radius: 8px;
@@ -76,8 +96,7 @@ select {
 
 select:hover {
   cursor: pointer;
-  background-color: rgb(166, 139, 92);
-
+  background-color: rgb(198, 168, 116);
 }
 
 
@@ -86,18 +105,82 @@ select:hover {
   padding: 8px;
   border-radius: 8px;
   background-color: rgb(119, 88, 55);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   font-family: 'Grenze Gotisch';
   font-size: 1.5rem;
-
-
 }
 
 .view-all:hover {
   cursor: pointer;
-  background-color: rgb(166, 139, 92);
+  background-color: rgb(198, 168, 116);
 }
 
-.root {
-  height: 100px;
-  background-color: aquamarine;
+.sort-by {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  border: none;
+  background-color: white;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.sort-by img {
+  height: 2.5rem;
+  margin-left: 10px;
+}
+
+.sort-by:hover {
+  cursor: pointer;
+}
+/* ESTILO CARDS HOME */
+
+.characters {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.character-card {
+  width: 20%;
+} 
+
+.character-card .background {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.background img {
+  border-radius: 10px;
+}
+
+.character-info {
+  z-index: 1;
+  position: absolute;
+}
+
+.img-container {
+  width: 80%;
+  height: 70%;
+}
+
+.img-container img {
+  width: 265px;
+  height: 264px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -5px;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

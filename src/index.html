@@ -9,57 +9,44 @@
 
 <body>
   <header>
-    <h1>Game of Thrones</h1>
+    <div class="logo">
+      <img src="./images/gameOfThronesLogo.png" alt="">
+    </div>
   </header>
   <main>
     <section class="houses">
-      <!-- IMPORT IMAGE-->
     </section>
-    <section class="filter-bar">
-
-      <nav class="nav-bar">
+    
+    <section class="filter-bar" id="filter-bar">
+      <a href="#nav-bar"><button class="view-all" id="view-all" >Ver todos los personajes</button></a> 
+      <nav class="nav-bar" id="nav-bar">
         <ul>
           <!-- GET DATA FROM JS/JSON FOR DROPDOWNS-->
-          <li><select>
+          <li><select id="name-select">
               <option>Nombre</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
+            </select></li>
 
-            </select></li>
-            <li><select>
+          <li><select id="last-name-select">
               <option>Apellido</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
             </select></li>
-            <li><select>
+
+          <li><select id="house-select">
               <option>Casa/Familia</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
             </select></li>
-            <li><select>
+
+          <li><select id="title-select">
               <option>Título</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
-              <option>test</option>
             </select></li>
-            <input type="text" class="search-input" id="search-input" placeholder="Búsqueda">
+
+          <input type="text" class="search-input" id="search-input" placeholder="Búsqueda">
         </ul>
       </nav>
 
-      <button class="view-all" id="view-all">Ver todos los personajes</button>
     </section>
-    <div class="root" id="root"></div> 
+    <button class="sort-by" id="sort-by"><h2>Ordenar</h2> <img src="./images/up-down.png" alt=""></button>
+    <section class="characters" id="characters">
+
+    </section>
   </main>
   <script src="main.js" type="module"></script>
 </body>
