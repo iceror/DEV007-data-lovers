@@ -402,7 +402,7 @@
       "fullName": "Oberyn Martell",
       "title": "Red Viper of Dorne",
       "family": "House Viper",
-      "imageUrl": "https://thronesapi.com/assets/images/red-viper.jpg",
+      "imageUrl": "https://media.vanityfair.com/photos/567968a46bcc0827714e9147/master/w_2560%2Cc_limit/pedro-pascal-game-of-thrones-season-5.jpg",
       "born": "258 BC",
       "death": "300 BC"
     },
@@ -525,8 +525,7 @@
       "fullName": "Qyburn",
       "title": "Former maester of the Citadel",
       "family": "House Unknown",
-      "imageUrl": "https://thronesapi.com/assets/images/qyburn.jpg",
-      "born": "Unknown"
+      "imageUrl": "https://www.gameofthronesquote.com/images/qyburn/qyburn-vf_.jpg"
     },
     {
       "id": 51,
