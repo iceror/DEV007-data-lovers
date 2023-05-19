@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200;800&family=Public+Sans:ital,wght@0,300;0,800;1,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+}
+header{
+  height: 60vh;
+  background-image: url('./Images/backgroundHeader.jpg');
+  
+}
+#logo{
+  width: 80%;
+  height: 10vh;
+  
+  
+}
+#banner{
+  width: 100%;
+  height: 70vh;
+  
+
+}
+.boton{
+  background-color: rgb(82, 52, 8);
+}

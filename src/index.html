@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Data Lover Got</title>
+</head>
+<body>
+  <header>
+    <div id='logo' >
+      <img src="./Images/gameOfThronesLogo.png" alt="Logo en letras Game Of Thrones" class="logo">
+    </div>
+    <div alt="Logos familias y paisajes" id="banner">
+      <img src="./Images/fondoFamilias.jpg" alt="paisajes y logo familias Game Of Thrones" class="banner">
+    </div>
+    <div class="filtersContainer">
+      <select  class="" id="nameDropdown">
+        <OPtion>NAME</OPtion>
+      </select>
+      <select  class="" id="lastNameDropdown">
+        <OPtion>LASTNAME</OPtion>
+      </select>
+      <select  class="" id="housesDropdown">
+        <OPtion>HOUSES</OPtion>
+      </select>
+      <input type="text" placeholder="Search" id="searchBar"/>
+    </div>
+    <a href="#filteredCards">VER TODOS LOS PERSONAJES</a>
+    
+  </header>
+  <main>
+    <div id="sort"></div>
+    <div id="filteredCards"></div>
+  </main>
+  <script src="main.js" type="module" ></script>
+</body>
+</html>
