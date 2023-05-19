@@ -35,74 +35,35 @@ async function createCards() {
 createCards();
 
 /* RENDER CATEGORIES IN FILTER-BAR BUTTONS */
-async function getCategories() {
-  const nameSelect = document.getElementById('name-select');
-  const lastNameSelect = document.getElementById('last-name-select');
-  const houseSelect = document.getElementById('house-select');
-  const titleSelect = document.getElementById('title-select');
+//name, lastname, house, title
+
+async function renderCategory(categoryName) {
   const dataArray = await getCharacters();
-  //MAP TO GET ALL CATEGORIES 
-  let allNames = dataArray.got.map(character => character.firstName);
-  let allLastNames = dataArray.got.map(character => character.lastName);
-  let allHouses = dataArray.got.map(character => character.family);
-  let titles = dataArray.got.map(character => character.title);
 
-  function renderNames() {
-    allNames.sort();
-    for (let i = 0; i < allNames.length; i++) {
-      var option = document.createElement("option");
-      option.value = allNames[i];
-      option.text = allNames[i];
-      nameSelect.appendChild(option);
-    }
-  }
+  const selectElement = document.getElementById(`${categoryName}-select`);
 
-  //GET UNIQUE LAST NAMES 
-  function getUniqueLastNames(value, index, array) {
+  //MAP TO GET SINGLE CATEGORY 
+  let singleCategory = dataArray.got.map(character => {
+    return eval(`character.${categoryName}`)
+  });
+
+  //GET UNIQUE ELEMENTS
+  function getUnique(value, index, array) {
     return array.indexOf(value) === index;
   }
 
-  function renderLastNames() {
-    let uniqueLastNames = allLastNames.filter(getUniqueLastNames);
-    uniqueLastNames.sort();
-    for (let i = 0; i < uniqueLastNames.length; i++) {
-      var option = document.createElement("option");
-      option.value = uniqueLastNames[i];
-      option.text = uniqueLastNames[i];
-      lastNameSelect.appendChild(option);
-    }
-  }
+  var unique = singleCategory.filter(getUnique);
 
-  //GET UNIQUE HOUSES
-  function getUniqueHouses(value, index, array) {
-    return array.indexOf(value) === index;
+  for (let i = 0; i < unique.length; i++) {
+    unique.sort();
+    let option = document.createElement("option");
+    option.value = unique[i];
+    option.text = unique[i];
+    selectElement.appendChild(option);
   }
-
-  function renderHouses() {
-    let uniqueHouses = allHouses.filter(getUniqueHouses);
-    uniqueHouses.sort();
-    for (let i = 0; i < uniqueHouses.length; i++) {
-      var option = document.createElement("option");
-      option.value = uniqueHouses[i];
-      option.text = uniqueHouses[i];
-      houseSelect.appendChild(option);
-    }
-  }
-
-  function renderTitles() {
-    titles.sort();
-    for (let i = 0; i < titles.length; i++) {
-      var option = document.createElement("option");
-      option.value = titles[i];
-      option.text = titles[i];
-      titleSelect.appendChild(option);
-    }
-  }
-
-  renderNames();
-  renderLastNames();
-  renderHouses();
-  renderTitles();
 }
 
-getCategories();
+renderCategory("firstName");
+renderCategory("lastName");
+renderCategory("family");
+renderCategory("title");
