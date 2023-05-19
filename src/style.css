@@ -55,6 +55,7 @@ header {
   flex-direction: row;
   align-items: center;
   height: 5rem;
+  /* TODO MAKE NAV-BAR FIXED AT TOP AFTER SCROLL */
 }
 
 .nav-bar ul {
@@ -133,6 +134,7 @@ select:hover {
 .sort-by:hover {
   cursor: pointer;
 }
+
 /* ESTILO CARDS HOME */
 
 .characters {
