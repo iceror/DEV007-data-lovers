@@ -141,7 +141,7 @@
       "lastName": "Baratheon",
       "fullName": "Joffrey Baratheon",
       "title": "Lord of the Seven Kingdoms, Protector of the Realm",
-      "family": "House Lannister",
+      "family": "House Baratheon",
       "imageUrl": "https://thronesapi.com/assets/images/joffrey.jpg",
       "born": "286 BC",
       "death": "300 BC"
@@ -274,10 +274,10 @@
     {
       "id": 26,
       "firstName": "Viserys",
-      "lastName": "Targaryan",
+      "lastName": "Targaryen",
       "fullName": "Viserys Targaryn",
       "title": "King Viserys III",
-      "family": "House Targaryan",
+      "family": "House Targaryen",
       "imageUrl": "https://thronesapi.com/assets/images/viserys-targaryan.jpg",
       "born": "276 BC",
       "death": "298 BC"
