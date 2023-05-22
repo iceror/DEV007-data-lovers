@@ -1,4 +1,4 @@
-import { example } from './data.js';
+// import { filterData, sortBy, computeStats } from './data.js';
 
 async function getCharacters() {
   const response = await fetch('./data/got/got.json');
@@ -12,6 +12,7 @@ async function createCards() {
   characters.got.forEach(character => {
     const card = document.createElement('div');
     card.className = 'character-card';
+    card.id = `${character.firstName} ${character.lastName} ${character.family} ${character.title}`
     card.innerHTML = ` 
   <div class='background'>
     <img src='./images/cardContainerMiniatura.png'>
@@ -42,6 +43,13 @@ async function renderCategory(categoryName) {
 
   const selectElement = document.getElementById(`${categoryName}-select`);
 
+  let viewAllCharacters = document.getElementById('view-all');
+  viewAllCharacters.addEventListener("click", () => {
+    selectElement.selectedIndex = 0
+    selectElement.dispatchEvent(new Event('change'));
+    document.getElementById('search-input').value = '';
+  });
+
   //MAP TO GET SINGLE CATEGORY 
   let singleCategory = dataArray.got.map(character => {
     return eval(`character.${categoryName}`)
@@ -61,6 +69,45 @@ async function renderCategory(categoryName) {
     option.text = unique[i];
     selectElement.appendChild(option);
   }
+
+  //RENDER CATEGORIES AFTER SELECTING OPTION
+  selectElement.addEventListener("change", (event1) => {
+    loopCharacterSection(event1.target.value);
+  });
+
+  let searchInput = document.getElementById('search-input')
+
+  searchInput.addEventListener("keyup", (event2) => {
+    loopCharacterSection();
+  });
+
+  function loopCharacterSection(selectedOption) {
+    let characterSection = document.getElementById('characters').getElementsByClassName('character-card');
+    let searchInputValue = document.getElementById('search-input').value;
+
+    for (let characterCard of characterSection) {
+      if (!selectedOption) {
+        if (searchInputValue && (characterCard.id.toUpperCase()).includes(searchInputValue.toUpperCase())) {
+          characterCard.classList.add('show');
+          characterCard.classList.remove('hide');
+        } else {
+          characterCard.classList.add('hide');
+          characterCard.classList.remove('show');
+        }
+      } else {
+        if (characterCard.id.includes(selectedOption) || (selectedOption === 'Nombre' || selectedOption === 'Apellido' || selectedOption === 'Casa/Familia' || selectedOption === 'Título')) {
+          characterCard.classList.add('show');
+          characterCard.classList.remove('hide');
+        } else {
+          characterCard.classList.add('hide');
+          characterCard.classList.remove('show');
+        }
+      }
+
+    }
+  }
+
+
 }
 
 renderCategory("firstName");
