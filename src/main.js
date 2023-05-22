@@ -1,11 +1,4 @@
-// import { filterData, sortBy, computeStats } from './data.js';
-
-async function getCharacters() {
-  const response = await fetch('./data/got/got.json');
-  const json = await response.json();
-  //console.log(json);
-  return json;
-}
+import { getCharacters, computeStats } from './data.js';
 
 async function createCards() {
   let characters = await getCharacters();
@@ -36,16 +29,15 @@ async function createCards() {
 createCards();
 
 /* RENDER CATEGORIES IN FILTER-BAR BUTTONS */
-//name, lastname, house, title
 
 async function renderCategory(categoryName) {
   const dataArray = await getCharacters();
 
   const selectElement = document.getElementById(`${categoryName}-select`);
 
-  let viewAllCharacters = document.getElementById('view-all');
-  viewAllCharacters.addEventListener("click", () => {
-    selectElement.selectedIndex = 0
+  let viewAllCharactersBtn = document.getElementById('view-all');
+  viewAllCharactersBtn.addEventListener("click", () => {
+    selectElement.selectedIndex = 0;
     selectElement.dispatchEvent(new Event('change'));
     document.getElementById('search-input').value = '';
   });
@@ -73,13 +65,14 @@ async function renderCategory(categoryName) {
 
   //RENDER CATEGORIES AFTER SELECTING OPTION
   selectElement.addEventListener("change", (event1) => {
-    loopCharacterSection(event1.target.value);
+    let selectOption = event1.target.value;
+    loopCharacterSection(selectOption);
   });
 
   //GET SEARCH INPUT && TRIGGER LOOP CHARACTER FUNCTION (RENDER CATEGORIES WHILE WRITING)
   let searchInput = document.getElementById('search-input');
 
-  searchInput.addEventListener("keyup", (event2) => {
+  searchInput.addEventListener("keyup", () => {
     loopCharacterSection();
   });
 
@@ -105,14 +98,13 @@ async function renderCategory(categoryName) {
           characterCard.classList.remove('show');
         }
       }
-
     }
   }
-
-
 }
 
 renderCategory("firstName");
 renderCategory("lastName");
 renderCategory("family");
 renderCategory("title");
+
+computeStats();
