@@ -10,3 +10,21 @@ let createCards = dataGot.got.map((character) => {
   
 `;
 });
+
+let families = dataGot.got.map((character) => {
+  let filteredFamilies = [];
+  filteredFamilies.includes(character.family)
+    ? console.log("Ya existe")
+    : filteredFamilies.push(character.family);
+  return filteredFamilies;
+});
+
+function filterData(array, filterName) {
+  let result = [];
+  array.map((elem) => {
+    result.includes(elem.filterName) ? null : result.push(elem.filterName);
+  });
+  console.log(result);
+}
+
+filterData(dataGot.got, "family");
