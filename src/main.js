@@ -62,6 +62,7 @@ async function renderCategory(categoryName) {
 
   var unique = singleCategory.filter(getUnique);
 
+  //SORT A-Z CATEGORIES IN OPTION BTNS  
   for (let i = 0; i < unique.length; i++) {
     unique.sort();
     let option = document.createElement("option");
@@ -75,7 +76,8 @@ async function renderCategory(categoryName) {
     loopCharacterSection(event1.target.value);
   });
 
-  let searchInput = document.getElementById('search-input')
+  //GET SEARCH INPUT && TRIGGER LOOP CHARACTER FUNCTION (RENDER CATEGORIES WHILE WRITING)
+  let searchInput = document.getElementById('search-input');
 
   searchInput.addEventListener("keyup", (event2) => {
     loopCharacterSection();
