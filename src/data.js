@@ -1,4 +1,4 @@
-/* BRING DATA FROM JSON */
+//BRING DATA FROM JSON 
 export async function getCharacters() {
   const response = await fetch('./data/got/got.json');
   const json = await response.json();
@@ -6,8 +6,8 @@ export async function getCharacters() {
   return json;
 }
 
-/* SHOW PERCENTAGE OF FAMILY MEMBERS*/ 
+//SHOW PERCENTAGE OF FAMILY MEMBERS
 export async function computeStats(){
   const data = await getCharacters();
-  console.log(data);
+  //console.log(data);
 }
