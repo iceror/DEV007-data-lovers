@@ -1,10 +1,10 @@
-import { getCharacters, computeStats } from './data.js';
+import { getCharacters, computeStats, sortData } from './data.js';
 
 async function createCards() {
   let characters = await getCharacters();
   characters.got.forEach(character => {
     const card = document.createElement('div');
-    card.className = 'character-card';
+    card.className = 'character-card show';
     card.id = `${character.firstName} ${character.lastName} ${character.family} ${character.title}`
     card.innerHTML = ` 
   <div class='background'>
@@ -25,8 +25,6 @@ async function createCards() {
 
   });
 }
-
-createCards();
 
 /* RENDER CATEGORIES IN FILTER-BAR BUTTONS */
 
@@ -100,11 +98,51 @@ async function renderCategory(categoryName) {
       }
     }
   }
+
 }
+
+// SORT CHARACTERS && SHOW CHARACTERS SORTED 
+async function sortCards() {
+  let sortButton = document.getElementById('sort-by');
+  let sortOrder = 'ascending';
+  let clickCount = 0;
+
+  sortButton.addEventListener('click', async () => {
+    clickCount++;
+    if (clickCount % 2 === 0) {
+      sortOrder = 'descending';
+    } else {
+      sortOrder = 'ascending';
+    }
+
+    let sortedData = await sortData( sortOrder);
+
+    let characterSection = document.getElementById('characters');
+    let characterSectionCards = document.getElementsByClassName('character-card show');
+
+    let sortedCardArray = [];
+
+    sortedData.forEach(sortedItem => {
+      for (const characterCard of characterSectionCards) {
+        if (characterCard.id.includes(sortedItem + ' ')) {
+          sortedCardArray.push(characterCard);
+        } 
+      }
+    });
+
+    sortedCardArray.forEach(element => {
+      characterSection.appendChild(element);
+    });
+  });
+}
+
+createCards();
 
 renderCategory("firstName");
 renderCategory("lastName");
 renderCategory("family");
 renderCategory("title");
 
+sortCards();
 computeStats();
+
