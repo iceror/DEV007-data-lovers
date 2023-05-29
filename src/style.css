@@ -235,7 +235,7 @@ select:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-image: url('./images/backGroundDesktop.jpg');
+  background-color: rgb(255, 234, 199);
   background: .5;
 }
 
@@ -249,7 +249,6 @@ h3 {
 .lastName-chart {
   width: 50vw;
   height: calc(100vh - 10rem);
-
 }
 
 .family-chart {
@@ -259,7 +258,7 @@ h3 {
 
 /*  MEDIA QUERIES   */
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
 
   header {
     width: 100vw
@@ -268,6 +267,7 @@ h3 {
   .houses {
     width: 100vw;
     height: 66vh;
+    background-position: center;
   }
 
 
@@ -307,7 +307,35 @@ h3 {
     justify-items: center;
   }
 
+  .character-card .background {
+    height: 22rem;
+  }
+
+  .character-card .background img {
+    width: 15rem;
+  }
+
+  .img-container img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .name-container h3 {
+    font-size: 1.5rem;
+  }
+
   .compute-stats {
     flex-direction: column;
+  }
+
+  .lastName-chart {
+    width: 100vw;
+    height: calc(100vh - 10rem);
+    margin-bottom: 1rem;
+  }
+  
+  .family-chart {
+    width: 100vw;
+    height: calc(100vh - 10rem);
   }
 }
