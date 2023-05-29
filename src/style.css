@@ -236,8 +236,8 @@ select:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(255, 234, 199);
-  background: .5;
+  background-color: rgba(164, 129, 69, 0.8);
+
 }
 
 h3 {
