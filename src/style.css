@@ -225,9 +225,10 @@ select:hover {
   height: 5rem;
   background-image: url('./images/backGroundDesktop.jpg');
   font-size: 3rem;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -274,6 +275,12 @@ h3 {
   .filter-bar {
     height: 17rem;
     display: block;
+  }
+
+  .filter-bar .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 
   .view-all{
@@ -337,5 +344,71 @@ h3 {
   .family-chart {
     width: 100vw;
     height: calc(100vh - 10rem);
+  }
+}
+
+@media screen and (max-width: 425px){
+  
+  .filter-bar {
+    height: 15rem;
+  }
+
+  .view-all {
+    font-size: 1.2rem;
+  }
+
+  .view-charts {
+    font-size: 1.2rem;
+  }
+
+  .nav-bar select {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    font-size: 1.2rem;
+  }
+
+  .sort-by h2 {
+    font-size: 1.5rem;
+  }
+
+  .sort-by img {
+    height: 1.5rem;
+  }
+
+  .characters {
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .character-card .background {
+    height: 18rem;
+  }
+
+  .character-card .background img {
+    width: 12rem;
+  }
+
+  .img-container img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .name-container h2 {
+    font-size: 1rem;
+  }
+  .name-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .chart-banner  {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .compute-stats h3 {
+    font-size: 1.5rem;
   }
 }
