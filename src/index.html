@@ -18,7 +18,11 @@
     </section>
 
     <section class="filter-bar" id="filter-bar">
-      <a href="#nav-bar"><button class="view-all" id="view-all" >Ver todos los personajes</button></a> 
+      <div class="buttons">
+        <a href="#nav-bar"><button class="view-all" id="view-all" >Ver todos los personajes</button></a> 
+        <a href="#chart-banner"><button class="view-charts" id="view-charts" >Ir a gráficas</button></a> 
+      </div>
+
       <nav class="nav-bar" id="nav-bar">
         <ul>
           <li><select id="firstName-select">
@@ -45,14 +49,24 @@
     <button class="sort-by" id="sort-by"><h2>Ordenar</h2> <img src="./images/up-down.png" alt=""></button>
 
     <section class="characters" id="characters">
-
     </section>
 
+    <h2 class="chart-banner" id="chart-banner"> Gráficas</h2>
     <section class="compute-stats" id="compute-stats">
-
+      <div>
+        <h3>Apellidos</h3>
+        <canvas class="lastName-chart" id="lastName-chart"></canvas>
+      </div>
+      <div>
+        <h3>Familias</h3>
+        <canvas class="family-chart" id="family-chart"></canvas>
+      </div>
     </section>
   </main>
-  <script src="main.js" type="module"></script>
 </body>
+<script src="main.js" type="module"></script>
+<script src="chart.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 </html>

@@ -100,6 +100,12 @@ select:hover {
   background-color: rgb(198, 168, 116);
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
 
 .view-all {
   border: none;
@@ -112,6 +118,21 @@ select:hover {
 }
 
 .view-all:hover {
+  cursor: pointer;
+  background-color: rgb(198, 168, 116);
+}
+
+.view-charts {
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(119, 88, 55);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  font-family: 'Grenze Gotisch';
+  font-size: 1.5rem;
+}
+
+.view-charts:hover {
   cursor: pointer;
   background-color: rgb(198, 168, 116);
 }
@@ -186,7 +207,7 @@ select:hover {
   align-items: center;
 }
 
-/* SHOW && HIDE CHARACTER CARD WHEN SELECTING AN OPTION*/
+/* SHOW && HIDE CHARACTER CARD WHEN SELECTING AN OPTION */
 .show {
   display: block;
   visibility: visible;
@@ -195,4 +216,43 @@ select:hover {
 .hide {
   display: none;
   visibility: hidden;
+}
+
+/* CHARTS */
+
+.chart-banner {
+  width: 100%;
+  height: 5rem;
+  background-image: url('./images/backGroundDesktop.jpg');
+  font-size: 3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.compute-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url('./images/backGroundDesktop.jpg');
+  background: .5;
+}
+
+h3 {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lastName-chart {
+  width: 50vw;
+  height: calc(100vh - 10rem);
+
+}
+
+.family-chart {
+  width: 50vw;
+  height: calc(100vh - 10rem);
 }
