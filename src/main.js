@@ -1,7 +1,7 @@
 import { getCharacters, computeStats, sortData } from './data.js';
 
 async function createCards() {
-  let characters = await getCharacters();
+  const characters = await getCharacters();
   characters.got.forEach(character => {
     const card = document.createElement('div');
     card.className = 'character-card show';
@@ -33,7 +33,7 @@ async function renderCategory(categoryName) {
 
   const selectElement = document.getElementById(`${categoryName}-select`);
 
-  let viewAllCharactersBtn = document.getElementById('view-all');
+  const viewAllCharactersBtn = document.getElementById('view-all');
   viewAllCharactersBtn.addEventListener("click", () => {
     selectElement.selectedIndex = 0;
     selectElement.dispatchEvent(new Event('change'));
@@ -41,7 +41,7 @@ async function renderCategory(categoryName) {
   });
 
   //MAP TO GET SINGLE CATEGORY 
-  let singleCategory = dataArray.got.map(character => {
+  const singleCategory = dataArray.got.map(character => {
     return eval(`character.${categoryName}`)
   });
 

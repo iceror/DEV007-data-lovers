@@ -6,7 +6,7 @@ export async function getCharacters() {
   return json;
 }
 
-//SHOW PERCENTAGE OF FAMILY MEMBERS
+//SHOW NUMBER OF FAMILY MEMBERS
 export async function computeStats() {
   const data = await getCharacters();
 
@@ -38,21 +38,23 @@ export async function computeStats() {
     }
 
   });
+  console.log(lastNameCount);
+  console.log(houseCount);
   return { lastNameCount, houseCount };
 }
 
 // SORT DATA 
 export async function sortData(sortOrder) {
   const array = await getCharacters();
-  let data = array.got.map(character => `${character.firstName}`);
+  const data = array.got.map(character => `${character.firstName}`);
 
   if (sortOrder === 'ascending') {
-    let ascendingData = data.sort();
+    const ascendingData = data.sort();
     return ascendingData;
 
   } else if (sortOrder === 'descending') {
-    let descendingData = data.sort().reverse();
+    const descendingData = data.sort().reverse();
     return descendingData;
   }
-};
+}
 
