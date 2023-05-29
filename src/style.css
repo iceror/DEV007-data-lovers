@@ -256,3 +256,58 @@ h3 {
   width: 50vw;
   height: calc(100vh - 10rem);
 }
+
+/*  MEDIA QUERIES   */
+
+@media screen and (min-width: 768px){
+
+  header {
+    width: 100vw
+  }
+
+  .houses {
+    width: 100vw;
+    height: 66vh;
+  }
+
+
+  .filter-bar {
+    height: 17rem;
+    display: block;
+  }
+
+  .view-all{
+    margin: 1rem 0 1rem 0;
+  }
+
+  .view-charts{
+    margin: 1rem 0 1rem 0;
+  }
+
+  .nav-bar {
+    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+  }
+
+  .nav-bar ul {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 1rem;
+  }
+
+  .search-input {
+    grid-column: span 2 ;
+  }
+
+  .characters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  .compute-stats {
+    flex-direction: column;
+  }
+}
