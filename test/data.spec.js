@@ -162,7 +162,7 @@ describe('sortData', () => {
     await expect(await sortData('descending')).toEqual(
       ["Sansa", "Samwell", "Jon", "Daenerys", "Brandon", "Arya"])
   });
-});// end describe
+});
 
 describe('computeStats', () => {
   it('is a function', () => {

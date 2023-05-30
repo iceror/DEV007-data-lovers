@@ -411,4 +411,12 @@ h3 {
   .compute-stats h3 {
     font-size: 1.5rem;
   }
+
+  .lastName-chart {
+    width: 100vw;
+  }
+
+  .family-chart {
+    width: 100vw;
+  }
 }
