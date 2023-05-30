@@ -22,7 +22,7 @@ Y la vista de la homepage:
 ![Home page Hifi](./imgs/homepage-hifi.png)
 ![Home page Hifi](./imgs/card-section-hifi.png)
 
-![Prototipo de alta fidelidad](https://www.figma.com/file/jQ3ksQ7h2IJGqSV4AZ4dvX/Planeaci%C3%B3n-Data-Lovers-GoT?type=design&node-id=0%3A1&t=R5LDch248yyovXb0-1)
+[Prototipo de alta fidelidad en figma ](https://www.figma.com/file/jQ3ksQ7h2IJGqSV4AZ4dvX/Planeaci%C3%B3n-Data-Lovers-GoT?type=design&node-id=0%3A1&t=R5LDch248yyovXb0-1)
 
 ### Historias de usuario
 
