@@ -49,12 +49,10 @@ export async function sortData(sortOrder) {
   const data = array.got.map(character => `${character.firstName}`);
 
   if (sortOrder === 'ascending') {
-    const ascendingData = data.sort();
-    return ascendingData;
+    return data.sort();
 
-  } else if (sortOrder === 'descending') {
-    const descendingData = data.sort().reverse();
-    return descendingData;
+  } else {
+    return data.sort().reverse();
   }
 }
 
