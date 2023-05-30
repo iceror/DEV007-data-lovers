@@ -1,4 +1,4 @@
-import { getCharacters, sortData, computeStats } from '../src/data.js';
+import { getCharacters, sortData, computeStats } from '../docs/data.js';
 
 describe('getCharacters', () => {
   it('is a function', () => {
