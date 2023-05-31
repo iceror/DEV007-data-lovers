@@ -14,8 +14,7 @@ Object.keys(lastNameCount).forEach(element => {
   let green = Math.floor(Math.random() * 256);
   let blue = Math.floor(Math.random() * 256);
   colorArray.push(`rgb(${red}, ${green}, ${blue})`);
-}) ;
-
+});
 
 new Chart(lastNameChart, {
   type: 'doughnut',
